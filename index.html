@@ -96,7 +96,7 @@
                         <td colspan="2"><strong>Kjent kunnskap om bunntetting</strong><br />' + (feature.properties['Bunntettin'] !== null ? autolinker.link(feature.properties['Bunntettin'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Info</strong><br />' + (feature.properties['Bilde'] !== null ? '<img src="images/' + String(feature.properties['Bilde']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>Info</strong><br />' + (feature.properties['Bilde'] !== null ? '<a href="images/' + String(feature.properties['Bilde']).replace(/[\\\/:]/g, '_').trim() + '">Plantegning/Bilde' : '') + '</a></td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Selskap</strong><br />' + (feature.properties['Selskap'] !== null ? autolinker.link(feature.properties['Selskap'].toLocaleString()) : '') + '</td>\
